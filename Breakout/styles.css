@@ -1,31 +1,44 @@
-
 .grid {
-    position: absolute;
-    width: 560px;
-    height: 300px;
-    border: solid 1px black;
-    margin-top: 100px;
-  }
-  
-  .user {
-    position: absolute;
-    width: 100px;
-    height: 20px;
-    background-color: blueviolet;
-  }
-  
-  .block {
-    position: absolute;
-    width: 100px;
-    height: 20px;
-    background-color: blue;
-  }
-  
-  .ball {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background-color: red;
-  }
-  
+  position: absolute;
+  width: 560px;
+  height: 300px;
+  border: 2px solid black;
+  background-color: #f8f9fa; /* Light background for contrast */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+  border-radius: 10px;
+}
+
+.user {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: #8a2be2; /* More vibrant blueviolet */
+  border-radius: 5px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.block {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: #007bff; /* Brighter blue */
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
